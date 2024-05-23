@@ -10,7 +10,7 @@
         android:icon="@drawable/baseline_language"
         android:title="Global" />
     <item
-        android:id="@+id/mForYOur"
+        android:id="@+id/mForYou"
         android:icon="@drawable/baseline_star_border_purple"
         android:title="For You" />
     <item
