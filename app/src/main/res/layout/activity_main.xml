@@ -30,15 +30,18 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_navbar" />
 
-<com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/baseline_edit"
-    android:id="@+id/idFAB"
-    android:contentDescription="Editar"
-    android:layout_alignTop="@id/BottNav"
-    android:layout_alignRight="@+id/BottNav"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/BottNav"
+        android:layout_alignRight="@+id/BottNav"
+        android:layout_margin="16dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="Editar"
+        android:src="@drawable/baseline_edit"
 
-    />
+        />
 
 </RelativeLayout>

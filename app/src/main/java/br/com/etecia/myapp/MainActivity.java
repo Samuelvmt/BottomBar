@@ -11,12 +11,15 @@ import android.widget.Toast;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView BottomNavView;
     MaterialToolbar idTopBar;
+    FloatingActionButton idFAB;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,14 @@ public class MainActivity extends AppCompatActivity {
         // Apresentando o xml para o java
         idTopBar = findViewById(R.id.idTopBar);
         BottomNavView = findViewById(R.id.BottNav);
-
+        idFAB = findViewById(R.id.idFAB);
+       //Criando evento click no FAB
+        idFAB.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Toast.makeText(MainActivity.this, "FAB", Toast.LENGTH_SHORT).show();
+           }
+       });
         idTopBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
