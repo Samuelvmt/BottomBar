@@ -26,27 +26,24 @@ public class MainActivity extends AppCompatActivity {
         BottomNavView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.mNews:
-                        Toast.makeText(MainActivity.this,
-                                "Cliquei em News", Toast.LENGTH_SHORT).show();
-                        ;
-                        break;
-                    case R.id.mGlobal:
-                        Toast.makeText(MainActivity.this,
-                                "Cliquei em Global", Toast.LENGTH_SHORT).show();
-                        ;
-                        break;
-                    case R.id.mForYou:
-                        Toast.makeText(MainActivity.this,
-                                "Cliquei em For You", Toast.LENGTH_SHORT).show();
-                        ;
-                        break;
-                    case R.id.mTrending:
-                        Toast.makeText(MainActivity.this,
-                                "Cliquei em Trending", Toast.LENGTH_SHORT).show();
-                        ;
-                        break;
+
+                if (item.getItemId() == R.id.mNews) {
+                    Toast.makeText(MainActivity.this,
+                            "Cliquei em News", Toast.LENGTH_SHORT).show();
+                }
+                if (item.getItemId() == R.id.mGlobal) {
+                    Toast.makeText(MainActivity.this,
+                            "Cliquei em Global", Toast.LENGTH_SHORT).show();
+                }
+                if (item.getItemId() == R.id.mForYou) {
+                    Toast.makeText(MainActivity.this,
+                            "Cliquei em For You", Toast.LENGTH_SHORT).show();
+                }
+                if (item.getItemId() == R.id.mTrending) {
+                    Toast.makeText(MainActivity.this,
+                            "Cliquei em Trending", Toast.LENGTH_SHORT).show();
+                    ;
+
 
                 }
 
