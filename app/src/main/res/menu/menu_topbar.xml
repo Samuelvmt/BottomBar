@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mFavorite"
+        android:icon="@drawable/baseline_favorite"
+        android:title="Favorite" />
+    <item
+        android:id="@+id/mLink"
+        android:icon="@drawable/baseline_link"
+        android:title="Link" />
+    <item
+        android:id="@+id/mShare"
+        android:icon="@drawable/baseline_share"
+        android:title="Share" />
+    <item
+        android:id="@+id/mCloud"
+        android:icon="@drawable/baseline_cloud"
+        android:title=" Cloud" />
+    <item
+        android:id="@+id/mLocation"
+        android:icon="@drawable/baseline_add_location"
+        android:title="Location" />
+    <item
+        android:id="@+id/mExplore"
+        android:icon="@drawable/baseline_explore"
+        android:title=" Explore" />
+    <item
+        android:id="@+id/mSearch"
+        android:icon="@drawable/baseline_search"
+        android:title=" Search" />
+
+
+</menu>
