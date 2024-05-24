@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.appbar.MaterialToolbar;
@@ -27,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         // Apresentando o xml para o java
         idTopBar = findViewById(R.id.idTopBar);
         BottomNavView = findViewById(R.id.BottNav);
+
+        idTopBar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,
+                        "Voltar", Toast.LENGTH_SHORT).show();
+            }
+        });
         //Criar um evento click na topbar
         idTopBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
