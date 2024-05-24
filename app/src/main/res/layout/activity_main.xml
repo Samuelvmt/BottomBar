@@ -30,5 +30,15 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_navbar" />
 
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/baseline_edit"
+    android:id="@+id/idFAB"
+    android:contentDescription="Editar"
+    android:layout_alignTop="@id/BottNav"
+    android:layout_alignRight="@+id/BottNav"
+
+    />
 
 </RelativeLayout>
